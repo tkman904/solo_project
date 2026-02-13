@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/layout/Header";
+import Home from "./components/layout/Home";
+import Footer from "./components/layout/Footer";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import FoodList from "./components/food/FoodList";
+import FoodDetail from "./components/food/FoodDetail";
+import PetList from "./components/pet/PetList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Header/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/food/list" element={<FoodList/>}/>
+                <Route path="/food/detail/:fno" element={<FoodDetail/>}/>
+                <Route path="/pet/list" element={<PetList/>}/>
+            </Routes>
+            <Footer/>
+        </Router>
+    );
 }
 
 export default App;
