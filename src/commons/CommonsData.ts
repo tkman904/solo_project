@@ -23,12 +23,12 @@ export interface FoodData {
 }
 
 export interface PetItem {
-    no: number;
+    pno: number;
     title: string;
     url: string;
     thumbnail: string;
-    detailtext: string;
-    detailimages: string[];
+    detailText: string;
+    detailImages: string[];
 }
 
 export interface PetData {

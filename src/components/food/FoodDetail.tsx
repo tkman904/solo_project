@@ -44,7 +44,7 @@ function FoodDetail() {
                         <table className="table">
                             <tbody>
                             <tr>
-                                <td width={"30%"} className="text-center" rowSpan={8}>
+                                <td width={"30%"} className="text-center" rowSpan={8} style={{"border": "none"}}>
                                     <img src={foodData?.poster} style={{"width": "350px", "height": "300px"}}/>
                                 </td>
                                 <td colSpan={2}>
@@ -75,8 +75,8 @@ function FoodDetail() {
                                 <td width={"60%"}>{foodData?.parking}</td>
                             </tr>
                             <tr>
-                                <td width={"10%"} className={"text-center"}>테마</td>
-                                <td width={"60%"}>{foodData?.theme}</td>
+                                <td width={"10%"} className={"text-center"} style={{"border": "none"}}>테마</td>
+                                <td width={"60%"} style={{"border": "none"}}>{foodData?.theme}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -86,7 +86,7 @@ function FoodDetail() {
                                 <td>{foodData?.content}</td>
                             </tr>
                             <tr>
-                                <td className={"text-end"}>
+                                <td className={"text-end"} style={{"border": "none"}}>
                                     <button className={"btn-sm backBtn"} onClick={() => nav(-1)}>목록</button>
                                 </td>
                             </tr>

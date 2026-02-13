@@ -36,11 +36,11 @@ function PetList() {
                             <div className="col-lg-3 col-sm-3 mb-4" key={index}>
                                 {/* item */}
                                 <div className="portfolio-item">
-                                    <Link className="portfolio-link" to={"/food/detail/" + pet.no}>
+                                    <Link className="portfolio-link" to={"/pet/detail/" + pet.pno}>
                                         <div className="portfolio-hover">
                                             <div className="portfolio-hover-content"><i className="fas fa-3x"></i></div>
                                         </div>
-                                        <img className="img-fluid" src={pet.thumbnail} alt="" />
+                                        <img className="img-thumbnail" src={pet.thumbnail} alt="" />
                                     </Link>
                                     <div className="portfolio-caption">
                                         <div className="portfolio-caption-heading">{pet.title}</div>

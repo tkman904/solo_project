@@ -40,7 +40,7 @@ function FoodList() {
                                         <div className="portfolio-hover">
                                             <div className="portfolio-hover-content"><i className="fas fa-3x"></i></div>
                                         </div>
-                                        <img className="img-fluid" src={food.poster} alt="" />
+                                        <img className="img-thumbnail" src={food.poster} alt="" />
                                     </Link>
                                     <div className="portfolio-caption">
                                         <div className="portfolio-caption-heading">{food.name}</div>
