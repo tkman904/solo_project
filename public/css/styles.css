@@ -247,7 +247,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -3165,17 +3165,45 @@ textarea.form-control-lg {
   --bs-btn-border-radius: 0.25rem;
 }
 
-.loginBtn, .logoutBtn, .backBtn, .commentBtn {
+.loginBtn, .logoutBtn, .backBtn, .commentBtn, .insertOkBtn, .updateOkBtn, .searchBtn {
   font-weight: bold;
   background-color: #ffc800;
   font-size: 16px;
   border-radius: 5px;
 }
 
-.commentDelBtn {
+.deleteOkBtn {
   font-weight: bold;
   background-color: black;
-  color: yellow;
+  color: #ffc800;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.insertBtn, .updateBtn, .listBtn {
+  font-weight: bold;
+  background-color: #ffc800;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 3px 3px;
+}
+
+.deleteBtn {
+  font-weight: bold;
+  background-color: black;
+  color: #ffc800;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 3px 3px;
+}
+
+.commentDelBtn, .cancelBtn, .prevBtn, .nextBtn {
+  font-weight: bold;
+  background-color: black;
+  color: #ffc800;
   font-size: 16px;
   border-radius: 5px;
 }
@@ -3257,7 +3285,7 @@ textarea.form-control-lg {
 
 .dropdown-menu {
   --bs-dropdown-zindex: 1000;
-  --bs-dropdown-min-width: 10rem;
+  --bs-dropdown-min-width: auto;
   --bs-dropdown-padding-x: 0;
   --bs-dropdown-padding-y: 0.5rem;
   --bs-dropdown-spacer: 0.125rem;
@@ -3498,7 +3526,7 @@ textarea.form-control-lg {
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--bs-dropdown-link-hover-color);
-  background-color: var(--bs-dropdown-link-hover-bg);
+  background-color: #ffc800;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
@@ -6947,6 +6975,14 @@ textarea.form-control-lg {
   left: 0;
   z-index: 1;
   content: "";
+}
+
+.news-title {
+  color: #ffc800;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .text-truncate {

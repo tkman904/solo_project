@@ -91,8 +91,14 @@ function Header() {
                         <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                             <li className="nav-item"><Link className="nav-link" to={"/food/list"}>음식</Link></li>
                             <li className="nav-item"><Link className="nav-link" to={"/pet/list"}>반려동물</Link></li>
-                            <li className="nav-item"><a className="nav-link" href="#about">게시판</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#team">검색</a></li>
+                            <li className="nav-item"><Link className="nav-link" to={"/board/list"}>게시판</Link></li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="fpDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">검색</a>
+                                <div className="dropdown-menu" aria-labelledby="fpDropdown">
+                                    <Link className="dropdown-item" to={"/youtube/search"}>레시피 영상</Link>
+                                    <Link className="dropdown-item" to={"/news/search"}>반려견 뉴스</Link>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div className="login_register_area d-flex" style={{"marginLeft": "50px"}}>

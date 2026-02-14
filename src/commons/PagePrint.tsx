@@ -2,8 +2,8 @@ import {FoodData, PetData} from "./CommonsData";
 import {FC} from "react";
 
 interface pagePrintProps {
-    data: FoodData|PetData;
-    setCurpage: (page: number) => void;
+    data: FoodData|PetData
+    setCurpage: (page: number) => void
 }
 
 const PagePrint: FC<pagePrintProps> = ({data, setCurpage}) => {

@@ -3,7 +3,7 @@ import {useQuery} from "@tanstack/react-query";
 import apiClient from "../../http-commons";
 import {Link} from "react-router-dom";
 import {AxiosResponse} from "axios";
-import {PetItem, PetData, FoodItem} from "../../commons/CommonsData";
+import {PetItem, PetData} from "../../commons/CommonsData";
 import PagePrint from "../../commons/PagePrint";
 
 function PetList() {
