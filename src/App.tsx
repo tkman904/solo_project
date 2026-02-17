@@ -13,6 +13,7 @@ import BoardUpdate from "./components/board/BoardUpdate";
 import BoardDelete from "./components/board/BoardDelete";
 import YoutubeSearch from "./components/youtube/YoutubeSearch";
 import NewsSearch from "./components/news/NewsSearch";
+import ChatBot from "./components/chat/ChatBot";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/board/delete/:no" element={<BoardDelete/>}/>
                 <Route path="/youtube/search" element={<YoutubeSearch/>}/>
                 <Route path="/news/search" element={<NewsSearch/>}/>
+                <Route path="/chat/chatbot" element={<ChatBot/>}/>
             </Routes>
             <Footer/>
         </Router>

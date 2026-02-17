@@ -1,3 +1,22 @@
+export interface foodMainItem {
+    fno: number
+    name: string
+    poster: string
+    hit: number
+}
+
+export interface petMainItem {
+    pno: number
+    title: string
+    thumbnail: string
+    hit: number
+}
+
+export interface MainData {
+    fList: foodMainItem[]
+    pList: petMainItem[]
+}
+
 export interface FoodItem {
     fno: number
     name: string

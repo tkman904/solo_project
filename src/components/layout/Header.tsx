@@ -80,7 +80,7 @@ function Header() {
             {/* Navigation */}
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div className="container">
-                    <a className="navbar-brand" href={"/"}>Food & Pet</a>
+                    <a className="navbar-brand" href={"/"} style={{"color": "white"}}>Food & Pet</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -91,7 +91,13 @@ function Header() {
                         <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                             <li className="nav-item"><Link className="nav-link" to={"/food/list"}>음식</Link></li>
                             <li className="nav-item"><Link className="nav-link" to={"/pet/list"}>반려동물</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to={"/board/list"}>게시판</Link></li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="ctDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+                                <div className="dropdown-menu" aria-labelledby="ctDropdown">
+                                    <Link className="dropdown-item" to={"/board/list"}>게시판</Link>
+                                    <Link className="dropdown-item" to={"/chat/chatbot"}>챗봇</Link>
+                                </div>
+                            </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="fpDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">검색</a>
                                 <div className="dropdown-menu" aria-labelledby="fpDropdown">
@@ -124,9 +130,7 @@ function Header() {
             {/* Masthead */}
             <header className="masthead">
                 <div className="container">
-                    <div className="masthead-subheading">Welcome To Our Website!</div>
-                    <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                    <a className="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                    <div className="masthead-heading text-uppercase" style={{"marginRight": "75px"}}>FOOD & PET</div>
                 </div>
             </header>
         </Fragment>
